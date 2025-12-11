@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratoeh Saman | Sinkronisasi Tanpa Batas</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&family=Oswald:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <nav class="container">
+            <h1 class="logo">SAMAN<span>SYNC</span></h1>
+            <ul>
+                <li><a href="#hero">Beranda</a></li>
+                <li><a href="#sejarah">Sejarah</a></li>
+                <li><a href="#gerakan">Gerakan Kunci</a></li>
+                <li><a href="#quiz">Uji Ritme</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+   <section id="hero" class="hero-section">
+        
+        <div class="background-slider">
+            <div class="slide" style="background-image: url('https://img.sanishtech.com/u/78abbda09f977bb2398edb7159390e2f.jpg');"></div>
+            <div class="slide" style="background-image: url('images/hero-saman-2.jpg');"></div>
+            <div class="slide" style="background-image: url('images/hero-saman-3.jpg');"></div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h2 class="animate-text">TARI SAMAN</h2>
+            <h3 class="animate-text">SINKRONISASI JIWA DAN RAGA</h3>
+            <a href="#sejarah" class="btn-primary pulse-btn">Telusuri Kisahnya</a>
+        </div>
+    </section>
+
+    <section id="sejarah" class="content-section light-bg">
+        <div class="container">
+            <h3 class="section-title">SEJARAH DAN ASAL USUL</h3>
+            <div class="sejarah-grid">
+                
+                <div class="text-block animate-on-scroll">
+                    <h4>📍 Dari Mana Tari Saman Berasal?</h4>
+                    <p>Tari Saman berasal dari Tanah Gayo, secara spesifik dari daerah Gayo Lues di provinsi Aceh. Tarian ini sangat erat kaitannya dengan suku Gayo dan tradisi mereka.</p>
+                    <p>Tari Saman juga diakui oleh UNESCO sebagai Warisan Budaya Tak Benda Kemanusiaan pada tahun 2011, menegaskan nilai universalnya.</p>
+                </div>
+                
+                <div class="image-placeholder animate-on-scroll">
+                    <img src="https://img.sanishtech.com/u/05b232c618e65bd567d59e01d77c8f75.jpg" alt="Foto Penari Tari Saman dalam formasi rapat dan sinkron" class="full-width-img">
+                </div>
+
+                <div class="text-block animate-on-scroll">
+                    <h4>📜 Media Dakwah dan Persatuan</h4>
+                    <p>Tari Saman diciptakan oleh seorang ulama Aceh bernama Syekh Saman pada abad ke-13.</p>
+                    <p>Tujuan awalnya adalah sebagai media dakwah untuk menyebarkan ajaran Islam, di mana gerakan dan syairnya disisipi nilai-nilai agama. Secara sosial, tarian ini berfungsi memperkuat rasa persatuan dan persaudaraan (Ukhuwah Islamiyah) di kalangan masyarakat Gayo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gerakan" class="content-section dark-bg">
+        <div class="container">
+            <h3 class="section-title text-light">DEFINISI & ENERGI GERAKAN</h3>
+            <div class="definisi-saman animate-on-scroll">
+                <p>Tari Saman adalah tarian tradisional yang dikenal karena kekompakan, kecepatan, dan sinkronisasi gerakan para penarinya yang luar biasa dalam formasi duduk berlutut rapat. Ini adalah tarian perkusi tubuh murni.</p>
+            </div>
+            <div class="gerakan-list">
+                <div class="gerakan-item animate-on-scroll" data-gerakan="guncang">
+                    <h4>Pukul Tangan (Guncang)</h4>
+                </div>
+                <div class="gerakan-item animate-on-scroll" data-gerakan="kirep">
+                    <h4>Gerakan Kepala (Kirep)</h4>
+                </div>
+                <div class="gerakan-item animate-on-scroll" data-gerakan="lingang">
+                    <h4>Berbaring (Lingang)</h4>
+                </div>
+            </div>
+            <div id="gerakan-detail" class="animate-on-scroll">
+                <p>Klik salah satu gerakan di atas untuk melihat penjelasan mendalam tentang energi di baliknya.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="quiz" class="content-section light-bg">
+        <div class="container">
+            <h3 class="section-title">UJI RITME ANDA: KUIS SAMAN</h3>
+            <div class="quiz-box" id="quiz-box">
+                <div id="start-card" class="quiz-card">
+                    <h4>Siap Uji Kekompakan Anda?</h4>
+                    <p>Kuis ini terdiri dari 10 pertanyaan acak tentang Tari Saman. Jawablah dengan cepat dan tepat!</p>
+                    <button id="start-btn" class="btn-primary">Mulai Kuis!</button>
+                </div>
+                <div id="question-card" class="quiz-card hidden">
+                    <p id="progress-text" class="progress-info">Soal 1 dari 10</p>
+                    <div id="question-image" class="question-image-placeholder"></div>
+                    <h2 id="question-text"></h2>
+                    <div id="answer-buttons" class="btn-grid"></div>
+                    <button id="next-btn" class="btn-primary" disabled>Lanjut <i class="fas fa-arrow-right"></i></button>
+                </div>
+                <div id="result-card" class="quiz-card hidden">
+                    <i id="result-icon" class="result-icon fas fa-award"></i>
+                    <h4>Hasil Kuis Anda!</h4>
+                    <p>Anda berhasil menjawab benar: <span id="score-display">0</span> dari 10 soal.</p>
+                    <p id="feedback-text" class="feedback"></p>
+                    <button id="restart-btn" class="btn-secondary"><i class="fas fa-redo"></i> Coba Lagi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Ratoeh Saman. Power by Tradition, Designed By Para Pecinta Tuhan (Kel.4 / X-2).</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
